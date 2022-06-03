@@ -1,0 +1,264 @@
+#sobremim{
+    /* height:50vh; */
+    border-bottom: 1px solid #C7C7C7;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+#sobremim p{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+.empresas_cinza{
+    color:#595959; 
+}
+#sobremim_text{
+    font-size: 0.6em;
+    font-style: normal;
+    padding-right: 2.5em;
+}
+#mais{
+    display: flex;
+    width: 100%;
+    justify-content: right;  
+}
+#mais p{
+    font-size: 1em;
+}
+#sobremim p a{
+    color: #0000ff;
+}
+/* ------------------------------------------ */
+#section_inicio_sobremim{
+    padding-top: 1rem;
+    display: grid;
+    height:65vh;
+    grid-template-columns:1.1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    "imagem_div textoinicial textoinicial"
+    "imagem_div textosecundario textosecundario";
+    /* border-bottom: 1px solid #C7C7C7; */
+    gap: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2em;
+}
+#imagem_div{
+    grid-area: imagem_div;
+    /* background: black; */
+    display: flex;
+    justify-content: right;
+}
+#imagem_div img{
+    height:30vmax;
+    width: auto;
+
+}
+#textoinicial{
+    grid-area: textoinicial;
+    border-top: 1px solid #C7C7C7;
+}
+#textosecundario{
+    grid-area: textosecundario;
+    /* background: blue; */
+}
+#textoinicial p{
+    font-size:1.5em;
+    line-height:1.5em;
+}
+#textosecundario{
+    display: flex;
+    align-items: flex-end;
+}
+#textosecundario p{
+    font-size:1.1em;
+    line-height:1.5em;
+}
+.num{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+}
+#section_experiencia{
+    border-top: 1px solid #C7C7C7;
+    padding-top: 6em;
+    padding-bottom: 8em;
+    border-bottom: 1px solid #C7C7C7;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.h1_sobremim{
+    font-size:5em;
+    font-style: normal;
+    font-weight: normal;
+}
+#contenher_modulos_experiencias{
+    display: grid;
+    height:70vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "espacolivre espacolivre experiencia1 experiencia1"
+    "espacolivre espacolivre experiencia2 experiencia2"
+    "espacolivre espacolivre experiencia3 experiencia3";
+    padding-top: 4em;
+}
+#espacolivre{
+    grid-area: espacolivre;
+    /* background:black; */
+}
+#experiencia1{
+    grid-area: experiencia1;
+    /* background:red; */
+    border-bottom: 1px solid #C7C7C7;
+}
+#experiencia2{
+    grid-area: experiencia2;
+    /* background:blue; */
+    border-bottom: 1px solid #C7C7C7;
+}
+#experiencia3{
+    grid-area: experiencia3;
+    /* background:coral; */
+    border-bottom: 1px solid #C7C7C7;
+}
+#divdown{
+    width:100%;
+    display:flex;
+    justify-content: right;
+    margin-top:2rem;
+}
+#divdown p a{
+    color: #0000ff;
+    font-size:2em;
+    text-decoration: underline;
+    /* padding:1rem; */
+}
+.modulos_ex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modulo_data{
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+}
+.modulo_cargo p{
+    font-size:1.2em;
+    padding-top: 1rem;
+}
+.modulo_data p{
+    font-size:1.2em;
+}
+#section_formacoes{
+    padding-top: 6em;
+    padding-bottom: 8em;
+    border-bottom: 1px solid #C7C7C7;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#formacoes_modulos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "modulovazio modulovazio formacoes1 formacoes1"
+        "modulovazio modulovazio formacoes2 formacoes2";
+}
+
+@media only screen and (max-width: 768px){
+    #sobremim p{
+        font-size: 1.5em;
+    }
+    #mais p{
+        font-size: 1em;
+    }
+    #section_inicio_sobremim{
+        padding-top: 1rem;
+        display: grid;
+        height:auto;
+        grid-template-columns:1fr;
+        grid-template-rows: 1.2fr 1fr 0.5fr; 
+        grid-template-areas: 
+        "imagem_div"
+        "textoinicial"
+        "textosecundario";
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2em;
+        gap:0;
+    }
+    #imagem_div{
+        display: block;
+        justify-content:center;
+    }
+    #textoinicial {
+        border:none;
+    }
+    #textoinicial p {
+        font-size:1em;
+    }
+    #textosecundario p {
+        font-size:0.9em;
+    }
+    #imagem_div img {
+        width:100%;
+        height:auto;
+    }
+    #textosecundario {
+        display: flex; 
+        align-items: center;
+    }
+    .h1_sobremim{
+        font-size: 2em;
+    }
+    #espacolivre {
+        display:none;
+    }
+    #contenher_modulos_experiencias{
+        display: grid;
+        height:70vh;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "experiencia1"
+        "experiencia2"
+        "experiencia3";
+        padding-top: 1em;
+    }
+    .modulo_cargo p {
+        font-size: 1em;
+    }
+    .modulo_data p {
+        font-size: 1em;
+    }
+    #divdown p a {
+        font-size: 1em;
+    }
+    #formacoes_modulos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.9fr 1fr;
+        grid-template-areas:
+            "formacoes1"
+            "formacoes2";
+    }
+    .modulos_forma p {
+        font-size: 1em;
+    }
+    #modulovazio{
+        display: none;
+    }
+    #section_formacoes {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    #section_experiencia {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}

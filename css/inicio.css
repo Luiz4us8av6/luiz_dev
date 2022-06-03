@@ -1,0 +1,27 @@
+#inicio{
+    height:85vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C7C7C7;
+    padding-bottom: 2rem;
+}
+#inicio h1{
+    font-size: 7.8vmax;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+@media only screen and (max-width: 768px){
+    #inicio h1{
+        font-size: 6vmax;
+    }
+    #inicio{
+        height:50vh;
+    }
+}
+/* @media only screen and (max-width: 1465px){
+
+} */

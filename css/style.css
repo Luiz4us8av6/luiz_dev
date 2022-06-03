@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+    cursor: pointer;
+}
+
+body{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* font-family: "Haas Grot Disp Web"; */
+    /* font-size: 12px; */
+    /* font-style: normal; */
+    background-color: #F0F1F2;
+}
+.scrolltop{
+    background: rgba(59, 131, 189);
+    border: none;
+    border-radius:50%;
+    position: fixed;
+    top: 4em;
+    right: 2em;
+    cursor: pointer;
+    outline: none;
+    z-index: 999;
+    /* opacity: 0; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.scrolltop:hover{
+    background: rgb(80, 143, 194);;
+    transition: 0s;
+}
+.scrolltop.active {
+    display: flex;
+    /* visibility: visible; */
+}
+.scrolltop span{
+    color: #fff;
+}
+#menu_fixo{
+    font-size:3em;
+    padding: 0.7em;
+}
+.scroll{
+    visibility: hidden;
+}
+.scroll2{
+    visibility: hidden;
+}
+@media only screen and (max-width: 768px){
+    body{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .scrolltop{
+        display: flex;
+        top: 3em;
+        right: 2em;
+        box-shadow: #000;
+    }
+    #menu_fixo{
+        font-size:1.5em;
+    }
+}

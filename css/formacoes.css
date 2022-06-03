@@ -1,0 +1,80 @@
+#formacoes{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #C7C7C7;
+}
+#formacoes h1{
+    font-size: 4em;
+    font-style: normal;
+    font-weight: normal;
+}
+#formacoes_modulos{
+    display: grid;
+    height:auto;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+    grid-template-areas: 
+    "modulovazio modulovazio formacoes1 formacoes1"
+    "modulovazio modulovazio formacoes2 formacoes2"
+    "modulovazio modulovazio formacoes3 formacoes3"
+    "modulovazio modulovazio formacoes4 formacoes4";
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    gap: 3em;
+}
+#modulovazio{
+    grid-area: modulovazio;
+}
+#formacoes1{
+    grid-area: formacoes1;
+}
+#formacoes2{
+    grid-area: formacoes2;
+}
+#formacoes3{
+    grid-area: formacoes3;   
+}
+#formacoes4{
+    grid-area: formacoes4;   
+}
+.modulos_forma{
+    display: flex;
+    justify-content: space-between;
+}
+.modulos_forma p{
+    width: 50%;
+    line-height:2em;
+    font-size: 1.2em;
+    color:#595959;
+}
+.modulos_forma h3{
+    font-weight:normal;
+    font-style: normal;
+}
+@media only screen and (max-width: 768px){
+    #formacoes h1{
+        font-size: 2em;
+    }
+    #formacoes_modulos{
+        display: grid;
+        height:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr; 
+        grid-template-areas: 
+        "formacoes1 formacoes1"
+        "formacoes2 formacoes2"
+        "formacoes3 formacoes3";
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap:0.5rem;
+    }
+    .modulos_forma{
+        display: block;
+    }
+    .modulos_forma p {
+        width: 100%; 
+        line-height: 2em;
+    }
+}

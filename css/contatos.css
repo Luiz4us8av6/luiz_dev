@@ -1,0 +1,77 @@
+.contatos{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #C7C7C7;
+}
+.contatos marquee{
+    font-size:10em;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+}
+/* ------------------------------------------- */
+#section_contatos{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section_contatos h1{
+    font-size:7.5vmax;
+    font-style: normal;
+    font-weight: normal;
+}
+#ul_footer_contatos{
+    display: flex;
+    gap: 1rem;
+}
+#footer_contatos{
+    display:flex;
+    justify-content: space-between;
+}
+#section_footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#ul_footer_contatos a{
+    font-size:0.8em;
+}
+/* ------------------------------------------- */
+@media only screen and (max-width: 768px){
+    #sobremim p{
+        font-size: 1.5em;
+    }
+    #mais p{
+        font-size: 1em;
+    }
+    .contatos marquee{
+        font-size:4em;
+        
+    }
+    #section_contatos h1{
+        font-size:5vmax;
+    }
+    #section_footer{
+        display: flex;
+        justify-content: center;
+    }
+    #footer_contatos{
+        display: block;
+    }
+    #ul_footer_contatos{
+        justify-content: center;
+    }
+    #section_contatos{
+        height:75vh;
+    }
+    #footer_contatos p{
+        text-align: center;
+        padding-top: 1em;
+    }
+}
+@media only screen and (max-width: 500px){
+    #section_contatos h1{
+        font-size:3vmax;
+    }
+}

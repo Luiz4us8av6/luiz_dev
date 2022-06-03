@@ -1,0 +1,276 @@
+#trabalhos{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid #C7C7C7;
+}
+#trabalhos h1{
+    font-size: 4em;
+    font-style: normal;
+    font-weight: normal;
+}
+#trabalhos p{
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 2rem;
+}
+#trabalhos p a{
+    color: #0000ff;
+}
+#colecao_trabalhos{
+    display: grid;
+    height:70vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "imagem imagem trabalho1 trabalho1"
+    "imagem imagem trabalho2 trabalho2"
+    "imagem imagem trabalho3 trabalho3"
+    "imagem imagem trabalho4 trabalho4";
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#imagem{
+    grid-area: imagem;
+    /* background:black; */
+}
+#trabalho1{
+    grid-area: trabalho1;
+    border-bottom: 2px solid #C7C7C7;
+}
+#trabalho1 a{
+    display: flex;
+    justify-content: space-between;
+    height: 100%; 
+}
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+}
+#trabalho1 p{
+    padding-top: 0;
+}
+#trabalho2 p{
+    padding-top: 0;
+}
+#trabalho3 p{
+    padding-top: 0;
+}
+#trabalho4 p{
+    padding-top: 0;
+}
+#trabalho2{
+    grid-area: trabalho2;
+    border-bottom: 2px solid #C7C7C7;
+}
+#trabalho2 a{
+    display: flex;
+    justify-content: space-between;
+    height: 100%; 
+}
+#trabalho3{
+    grid-area: trabalho3;
+    border-bottom: 2px solid #C7C7C7;
+}
+#trabalho3 a{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+#trabalho4{
+    grid-area: trabalho4;
+    border-bottom: 2px solid #C7C7C7;
+}
+#trabalho4 a{
+    display: flex;
+    justify-content: space-between;
+    height: 100%; 
+}
+#trabalho1 a:hover{
+    border-bottom: 2px solid #000;
+    transition: 2s;
+}
+#trabalho2 a:hover{
+    border-bottom: 2px solid #000;
+    transition: 2s;
+}
+#trabalho3 a:hover{
+    border-bottom: 2px solid #000;
+}
+#trabalho4 a:hover{
+    border-bottom: 2px solid #000;
+    transition: 2s;
+}
+/* --------------------------------------------- */
+.div_imagem_projetos{
+    overflow: hidden;
+}
+
+.div_imagem_projetos img{
+   max-width:100%;
+   -moz-transformation:all 0.3s;
+   -webkit-transition:all 0.3s;
+   transition:all 1s;
+}
+.div_imagem_projetos:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform: scale(1.1);
+}
+#section_projetos_inicio{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 13em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#section_projetos_inicio h1{
+    font-size:11vmax;
+    font-weight: normal;
+    font-style: normal;
+}
+#section_projetos_inicio a{
+    color: #0000ff;
+}
+#section_projetos_inicio p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+#section_modulos_projetos{
+    border-bottom: 1px solid #C7C7C7;
+}
+.div_contenher_modulos_projetos{
+    display: grid;
+    height:80vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr; 
+    grid-template-areas: 
+    "div_imagem_projetos div_imagem_projetos div_modulo_superior_projetos div_modulo_superior_projetos"
+    "div_imagem_projetos div_imagem_projetos div_moduloinferior_projetos div_moduloinferior_projetos";
+    margin-bottom: 10em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 3em;
+}
+.div_imagem_projetos{
+    grid-area: div_imagem_projetos;
+    /* background: coral; */
+}
+.div_modulo_superior_projetos{
+    grid-area: div_modulo_superior_projetos;
+    /* background: red; */
+    border-top: 1px solid #C7C7C7;
+}
+.div_moduloinferior_projetos{
+    grid-area: div_moduloinferior_projetos;
+    display: flex;
+    align-items: flex-end;
+    /* background: blue; */
+    color: #595959;
+}
+.div_modulo_superior_projetos p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.modulo_titulo_projetos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modulo_titulo_projetos a{
+    cursor: pointer;
+}
+.modulo_titulo_projetos span:hover{ 
+    font-size:3em;
+}
+.modulo_titulo_projetos h1{
+    font-size:3em;
+    font-weight:normal;
+    font-style: normal;
+}
+.modulo_titulo_projetos span{
+    font-size:2em;
+}
+.descricao_projeto_modulos{
+    font-size:1.2em;
+}
+@media only screen and (max-width: 768px){
+    #trabalhos h1{
+        font-size: 2em;
+    }
+    #trabalhos p{
+        font-size: 1em;
+    }
+    #colecao_trabalhos{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "trabalho1 trabalho1"
+        "trabalho2 trabalho2"
+        "trabalho3 trabalho3"
+        "trabalho4 trabalho4";
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .p_trabalho_mob{
+        display: none;
+    }
+    #section_projetos_inicio{
+        display:block;
+        height:30vh;
+    }
+    #section_projetos_inicio h1{
+        padding-top: 0.5em;
+        font-size:3em;
+    }
+    #section_projetos_inicio p{
+        padding-top: 1em;
+        font-size:1em;
+    }
+    .div_contenher_modulos_projetos{
+        display: grid;
+        height:auto;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 0.8fr 0.1fr; 
+        grid-template-areas: 
+        "div_imagem_projetos"
+        "div_modulo_superior_projetos"
+        "div_moduloinferior_projetos";
+        margin-bottom: 3em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap:0;
+    }
+    .div_modulo_superior_projetos{
+        border-top: 0;
+    }
+    .div_moduloinferior_projetos{
+        border-bottom: 1px solid #C7C7C7;
+        padding-bottom: 2em;
+    }
+    .div_moduloinferior_projetos p{
+        font-size:0.9em;
+    }
+    .descricao_projeto_modulos{
+        font-size: 1em;
+    }
+    .modulo_titulo_projetos h1{
+        font-size:2em;
+    }
+}
+@media only screen and (max-width: 900px){
+
+    .div_contenher_modulos_projetos {
+        grid-template-rows: 1fr 0.4fr 0.1fr;
+        height: auto;
+        margin-bottom: 4em;
+    }
+    .modulo_titulo_projetos h1{
+        font-size: 4vmax;
+    }
+}
