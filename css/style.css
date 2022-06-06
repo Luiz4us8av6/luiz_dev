@@ -4,6 +4,16 @@
     font-family: 'Roboto', sans-serif;
 }
 /* font-family: 'Teko', sans-serif; */
+
+.body::-webkit-scrollbar{
+    width: 9px;
+    background: none;
+}
+.body::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background: #0000ff;
+}
+
 ul{
     list-style: none;
 }
