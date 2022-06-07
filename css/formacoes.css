@@ -14,14 +14,14 @@
     display: grid;
     height:auto;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
     grid-template-areas: 
     "modulovazio modulovazio formacoes1 formacoes1"
     "modulovazio modulovazio formacoes2 formacoes2"
     "modulovazio modulovazio formacoes3 formacoes3"
     "modulovazio modulovazio formacoes4 formacoes4";
     padding-top: 7rem;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     gap: 3em;
 }
 #modulovazio{

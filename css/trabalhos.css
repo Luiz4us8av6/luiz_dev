@@ -53,6 +53,7 @@
 }
 #trabalho1 p{
     padding-top: 0;
+    text-align: center;
 }
 #trabalho2 p{
     padding-top: 0;
@@ -159,7 +160,9 @@
 }
 .div_imagem_projetos{
     grid-area: div_imagem_projetos;
-    /* background: coral; */
+    background: #C7C7C7; 
+    display:flex;
+    justify-content: center;
 }
 .div_modulo_superior_projetos{
     grid-area: div_modulo_superior_projetos;

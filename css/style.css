@@ -1,19 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Teko', sans-serif; */
+    /* color:rgb(38, 38, 38); */
 }
-/* font-family: 'Teko', sans-serif; */
-
 .body::-webkit-scrollbar{
     width: 9px;
     background: none;
 }
 .body::-webkit-scrollbar-thumb{
-    border-radius: 3px;
-    background: #0000ff;
+    /* border-radius: 3px; */
+    background: #404040;
 }
-
 ul{
     list-style: none;
 }
@@ -32,27 +32,33 @@ body{
     background-color: #F0F1F2;
 }
 .scrolltop{
-    background: rgba(59, 131, 189);
+    /* background: rgba(59, 131, 189); */
     border: none;
     border-radius:50%;
     position: fixed;
-    top: 4em;
+    top: -5em;
     right: 2em;
     cursor: pointer;
     outline: none;
     z-index: 999;
     /* opacity: 0; */
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.2s;
 }
-.scrolltop:hover{
+/* .scrolltop:hover{
     background: rgb(80, 143, 194);;
     transition: 0s;
-}
+} */
 .scrolltop.active {
-    display: flex;
+    visibility: visible;
+    /* display: flex; */
+    top: 4em;
+    right: 2em;
+    transition: 0.2s;
+    /* transition: 0.2s; */
     /* visibility: visible; */
 }
 .scrolltop span{

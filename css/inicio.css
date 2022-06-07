@@ -12,8 +12,18 @@
     font-style: normal;
     font-weight: normal;
     line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
 }
-
+#imagem{
+    margin-right: 2rem;
+}
+/* #imagem img{
+    width: 100%;
+    height: 100%;
+} */
+/* .fechado{
+    display: none;
+} */
 @media only screen and (max-width: 768px){
     #inicio h1{
         font-size: 6vmax;

@@ -30,6 +30,9 @@
     />
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700&display=swap" rel="stylesheet">
   </head>
   <body class="body">
     <header class="scroll2">
@@ -47,6 +50,7 @@
         </ul>
       </nav>
     </header>
+
     <div class="menu_fixo_page" id="menu_fixo_page_id">
       <ul>
         <li><a href="projetos.html">Projetos</a></li>
@@ -54,6 +58,9 @@
         <li><a href="contatos.html">Contato</a></li>
       </ul>
     </div>
+    <article>
+      <button id="butoon_menu_fixo" class="scrolltop">MENU</button>
+    </article>
     <main>
       <section id="inicio">
         <h1 class="scroll">
@@ -66,10 +73,8 @@
         <p class="scroll">
           <span id="sobremim_text">Sobre mim</span> Atualmente, estou
           trabalhando com uma galera massa na
-          <a href="https://www.ejectufrn.com.br/">@EJECT</a>, e também sou um
-          sofrido estudante de engenharia de software na
-          <a href="https://www.instagram.com/ufrn.br/">@UFRN</a>. Quando não
-          estou fazendo nada, eu realmente não estou fazendo nada.
+          <a href="https://www.ejectufrn.com.br/">@EJECT</a>, e também sou estudante de engenharia de software na
+          <a href="https://www.instagram.com/ufrn.br/">@UFRN</a>. Tenho experiência com desenvolvimento WEB. 
         </p>
         <div id="mais">
           <p><a href="sobremim.html">More</a></p>
@@ -86,8 +91,13 @@
         </div>
 
         <div id="colecao_trabalhos">
-          <div id="imagem"></div>
-          <div id="trabalho1" class="scroll">
+          <div id="imagem">
+            <!-- <img src="/img/catole_img.PNG" alt="" class="imgs_trab fechado">
+            <img src="/img/natura_img.PNG" alt="" class="imgs_trab fechado">
+            <img src="/img/selfscare_img.PNG" alt="" class="imgs_trab fechado">
+            <img src="/img/port_img.PNG" alt="" class="imgs_trab fechado"> -->
+          </div>
+          <div id="trabalho1" class="scroll modulos_trab">
             <a href="projetos.html">
               <div class="flex">
                 <p>01</p>
@@ -99,11 +109,11 @@
               </div>
             </a>
           </div>
-          <div id="trabalho2" class="scroll">
+          <div id="trabalho2" class="scroll modulos_trab">
             <a href="projetos.html">
               <div class="flex">
                 <p>02</p>
-                <p>Dashboard</p>
+                <p>Natura (EJECT)</p>
               </div>
               <div class="flex">
                 <p class="p_trabalho_mob">HTML, CSS e JavaScript</p>
@@ -111,26 +121,26 @@
               </div>
             </a>
           </div>
-          <div id="trabalho3" class="scroll">
+          <div id="trabalho3" class="scroll modulos_trab">
             <a href="projetos.html">
               <div class="flex">
                 <p>03</p>
-                <p>Form validation</p>
+                <p>Selfscare</p>
               </div>
               <div class="flex">
-                <p class="p_trabalho_mob">HTML, CSS, JavaScript e API</p>
+                <p class="p_trabalho_mob">HTML, CSS, JavaScript</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
             </a>
           </div>
-          <div id="trabalho4" class="scroll">
+          <div id="trabalho4" class="scroll modulos_trab">
             <a href="projetos.html">
               <div class="flex">
                 <p>04</p>
-                <p>Calc</p>
+                <p>Portfólio WEB</p>
               </div>
               <div class="flex">
-                <p class="p_trabalho_mob">HTML, CSS, JavaScript e ReactJS</p>
+                <p class="p_trabalho_mob">HTML, CSS, JavaScript e jquery</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
             </a>
@@ -148,8 +158,7 @@
           <div id="formacoes1" class="modulos_forma scroll">
             <h3>Front-End</h3>
             <p>
-              Atualmente codifico nas seguintes ferramentas: HTML, CSS,
-              JavaScript, ReactJS e WordPress.
+              HTML, CSS, JavaScript, ReactJS e WordPress.
             </p>
           </div>
           <div id="formacoes2" class="modulos_forma scroll">
@@ -159,9 +168,7 @@
           <div id="formacoes3" class="modulos_forma scroll">
             <h3>Ferramentas</h3>
             <p>
-              Tenho experiência na construção de imagens e criação do designer
-              de sites, utilizando as ferramnetas Figma e Inkscape, além disso,
-              tenho experiência na metodologia Scrum e na ferramenta GitHub.
+              Figma, Inkscape e GitHub.<br> Gestão: Trello, Workplace e pipefy.
             </p>
           </div>
         </div>
@@ -184,13 +191,10 @@
         </footer>
       </section>
 
-      <article>
-        <button id="butoon_menu_fixo" class="scrolltop">
-          <span class="material-symbols-outlined" id="menu_fixo">menu</span>
-        </button>
-      </article>
+      
     </main>
     <script src="javascript/menu.js"></script>
     <script src="javascript/efeitoscroll.js"></script>
+    <script src="javascript/efeitotrabalhos.js"></script>
   </body>
 </html>
