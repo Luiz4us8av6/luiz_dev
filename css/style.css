@@ -84,6 +84,7 @@ body{
         top: 3em;
         right: 2em;
         box-shadow: #000;
+        visibility: visible;
     }
     #menu_fixo{
         font-size:1.5em;
