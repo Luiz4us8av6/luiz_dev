@@ -13,6 +13,7 @@
     font-weight: normal;
     line-height: 1.2em;
     font-family: 'Roboto', sans-serif;
+    /* color: var(--body-color-primaria); */
 }
 #imagem{
     margin-right: 2rem;

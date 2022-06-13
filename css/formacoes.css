@@ -47,7 +47,7 @@
     width: 50%;
     line-height:2em;
     font-size: 1.2em;
-    color:#595959;
+    color:var(--body-color-secundaria);
 }
 .modulos_forma h3{
     font-weight:normal;

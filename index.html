@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/formacoes.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/contatos.css" />
+    <link rel="stylesheet" href="css/darkmode.css" /> 
+    <!-- <link rel="stylesheet" href="css/darkmode.scss" /> -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -34,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700&display=swap" rel="stylesheet">
   </head>
-  <body class="body">
+  <body class="body" id="body_id">
     <header class="scroll2">
       <div class="logo">
         <p><a href="index.html">Luiz Gustavo</a></p>
@@ -52,6 +54,7 @@
     </header>
 
     <div class="menu_fixo_page" id="menu_fixo_page_id">
+      <button id="butoon_darkmode">DARK</button>
       <ul>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="sobremim.html">Sobre</a></li>
@@ -61,11 +64,12 @@
     <article>
       <button id="butoon_menu_fixo" class="scrolltop">MENU</button>
     </article>
+    
     <main>
       <section id="inicio">
         <h1 class="scroll">
           Olá!<br />
-          Me chamo Luiz Gustavo,<br class="br" />
+          Meu chamo Luiz Gustavo,<br class="br" />
           sou desenvolvedor WEB&#9995;
         </h1>
       </section>
@@ -193,7 +197,9 @@
 
       
     </main>
+    
     <script src="javascript/menu.js"></script>
+    <script src="javascript/darkmode.js"></script>
     <script src="javascript/efeitoscroll.js"></script>
     <script src="javascript/efeitotrabalhos.js"></script>
   </body>

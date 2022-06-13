@@ -19,17 +19,22 @@ ul{
 }
 a{
     text-decoration: none;
-    color:#000;
+    color:var(--body-color-primaria);
     cursor: pointer;
 }
-
+h1{
+    color:var(--body-color-primaria);
+}
+p{
+    color:var(--body-color-primaria);
+}
+h3{
+    color:var(--body-color-primaria);
+}
 body{
     margin-left: 2rem;
     margin-right: 2rem;
-    /* font-family: "Haas Grot Disp Web"; */
-    /* font-size: 12px; */
-    /* font-style: normal; */
-    background-color: #F0F1F2;
+    background-color: var(--body-bg);
 }
 .scrolltop{
     /* background: rgba(59, 131, 189); */
@@ -54,12 +59,9 @@ body{
 } */
 .scrolltop.active {
     visibility: visible;
-    /* display: flex; */
     top: 4em;
     right: 2em;
     transition: 0.2s;
-    /* transition: 0.2s; */
-    /* visibility: visible; */
 }
 .scrolltop span{
     color: #fff;
@@ -74,6 +76,7 @@ body{
 .scroll2{
     visibility: hidden;
 }
+
 @media only screen and (max-width: 768px){
     body{
         margin-left: 0.5rem;
@@ -89,4 +92,5 @@ body{
     #menu_fixo{
         font-size:1.5em;
     }
+    
 }

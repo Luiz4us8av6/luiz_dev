@@ -1,0 +1,16 @@
+:root{
+    --body-bg:#F0F1F2;
+    --body-color-primaria:#000;
+    --link-color:#0000ff;
+    --body-color-secundaria:#555;
+    --bg-img:#555;
+    --bg-menu:rgba(0, 0, 0, 0.927);
+}
+.dark-mode:root{
+    --bg-menu:#292e33f1;
+    --bg-img:#292e33c7;
+    --body-bg:#212529;
+    --body-color-primaria:rgb(234, 234, 234);
+    --link-color:#000093;
+    --body-color-secundaria:#555;
+}

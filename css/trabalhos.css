@@ -17,7 +17,7 @@
     padding-top: 2rem;
 }
 #trabalhos p a{
-    color: #0000ff;
+    color: var(--link-color);
 }
 #colecao_trabalhos{
     display: grid;
@@ -136,7 +136,7 @@
     font-style: normal;
 }
 #section_projetos_inicio a{
-    color: #0000ff;
+    color: var(--link-color);
 }
 #section_projetos_inicio p{
     font-size: 1.1em;
@@ -160,7 +160,7 @@
 }
 .div_imagem_projetos{
     grid-area: div_imagem_projetos;
-    background: #C7C7C7; 
+    background: var(--bg-img); 
     display:flex;
     justify-content: center;
 }

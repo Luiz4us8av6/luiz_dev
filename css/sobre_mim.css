@@ -12,6 +12,7 @@
 #sobremim p{
     font-size: 2em;
     line-height: 1.5em;
+    /* color:var(--body-color-primaria); */
 }
 .empresas_cinza{
     color:#595959; 
@@ -30,7 +31,7 @@
     font-size: 1em;
 }
 #sobremim p a{
-    color: #0000ff;
+    color: var(--link-color);
 }
 /* ------------------------------------------ */
 #section_inicio_sobremim{
@@ -134,7 +135,7 @@
     margin-top:2rem;
 }
 #divdown p a{
-    color: #0000ff;
+    color: var(--link-color);
     font-size:2em;
     text-decoration: underline;
     /* padding:1rem; */
