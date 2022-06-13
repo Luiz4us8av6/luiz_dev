@@ -122,7 +122,7 @@ header{
         "logo nav";
     }
     .menu_fixo_page.active {
-        width: 70%;
+        width: 100%;
     }
     .menu_fixo_page{
         font-size:2em;
